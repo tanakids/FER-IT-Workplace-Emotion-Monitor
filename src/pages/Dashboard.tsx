@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import CoreTaxLogo from '@/components/CoreTaxLogo';
+import PortTaxLogo from '@/components/PortTaxLogo';
 import { Calendar, Database, FileText, FolderOpen, Info, Layout, LayoutDashboard, List, ListCheck, User, UserRound, Users } from 'lucide-react';
 
 const Dashboard = () => {
@@ -16,10 +16,10 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Top Navigation Bar */}
-      <header className="bg-coretax-blue text-white shadow-sm">
+      <header className="bg-porttax-blue text-white shadow-sm">
         <div className="px-4 py-2 flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <CoreTaxLogo className="text-white" />
+            <PortTaxLogo className="text-white" />
             <div className="h-6 border-r border-gray-400"></div>
             <span className="text-sm">Versi: 1.1.2-build-1943</span>
           </div>
@@ -38,7 +38,7 @@ const Dashboard = () => {
         </div>
         
         {/* Second Row Navigation */}
-        <div className="bg-coretax-blue border-t border-gray-700 px-4 py-1">
+        <div className="bg-porttax-blue border-t border-gray-700 px-4 py-1">
           <nav className="flex space-x-1">
             <NavItem href="#" active>Portal Saya</NavItem>
             <NavItem href="#">e-Faktur</NavItem>
@@ -57,7 +57,7 @@ const Dashboard = () => {
       <div className="flex flex-1">
         {/* Sidebar */}
         <aside className="w-64 bg-white border-r">
-          <div className="bg-coretax-blue text-white p-4">
+          <div className="bg-porttax-blue text-white p-4">
             <div className="font-bold">06611970795420000</div>
             <div className="text-sm">MATARAM SURYA VISI SINEMA</div>
           </div>
@@ -88,8 +88,8 @@ const Dashboard = () => {
         {/* Main Content */}
         <div className="flex-1 p-4">
           <div className="flex justify-between items-center mb-4">
-            <h1 className="text-2xl font-semibold text-coretax-blue">Ikhtisar Profil Wajib Pajak</h1>
-            <Button className="bg-coretax-blue hover:bg-blue-800">
+            <h1 className="text-2xl font-semibold text-porttax-blue">Ikhtisar Profil Wajib Pajak</h1>
+            <Button className="bg-porttax-blue hover:bg-blue-800">
               <FileText className="mr-2" size={16} />
               Unduh Ikhtisar Profil
             </Button>
@@ -166,8 +166,8 @@ const SidebarItem = ({ icon, label, active = false }) => (
 const TabItem = ({ label, active = false }) => (
   <div className={`px-4 py-2 cursor-pointer border-b-2 text-sm ${
     active 
-      ? 'border-coretax-blue text-coretax-blue font-medium' 
-      : 'border-transparent text-gray-600 hover:text-coretax-blue'
+      ? 'border-porttax-blue text-porttax-blue font-medium' 
+      : 'border-transparent text-gray-600 hover:text-porttax-blue'
   }`}>
     {label}
   </div>

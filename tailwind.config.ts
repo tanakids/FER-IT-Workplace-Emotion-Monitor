@@ -63,8 +63,8 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// CoreTax specific colors
-				coretax: {
+				// Port Tax specific colors (renamed from CoreTax)
+				porttax: {
 					blue: '#2d3a6d',
 					yellow: '#FCBD11',
 					red: '#F93030',

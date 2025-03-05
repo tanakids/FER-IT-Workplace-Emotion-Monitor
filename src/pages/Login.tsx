@@ -5,7 +5,7 @@ import { Eye, EyeOff, RefreshCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import CoreTaxLogo from '@/components/CoreTaxLogo';
+import PortTaxLogo from '@/components/PortTaxLogo';
 import { toast } from 'sonner';
 
 const Login = () => {
@@ -49,11 +49,11 @@ const Login = () => {
       <div className="flex-1 flex flex-col items-center justify-center p-8 z-10">
         <div className="w-full max-w-md">
           <div className="mb-10 flex justify-center">
-            <CoreTaxLogo />
+            <PortTaxLogo />
           </div>
           
           <div className="bg-white rounded-md shadow-md p-8 animate-fade-up">
-            <h1 className="text-2xl font-bold text-coretax-blue mb-6">Login</h1>
+            <h1 className="text-2xl font-bold text-porttax-blue mb-6">Login</h1>
             
             <form onSubmit={handleSubmit}>
               <div className="space-y-5">
@@ -127,24 +127,24 @@ const Login = () => {
                 </div>
                 
                 <div>
-                  <a href="#" className="text-coretax-blue hover:underline text-sm">
+                  <a href="#" className="text-porttax-blue hover:underline text-sm">
                     Lupa Kata Sandi?
                   </a>
                 </div>
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-coretax-button hover:bg-coretax-yellow text-black"
+                  className="w-full bg-porttax-button hover:bg-porttax-yellow text-black"
                 >
                   Login
                 </Button>
                 
                 <div className="text-center space-y-2 pt-2">
                   <p className="text-sm">
-                    Pengguna Baru? <a href="#" className="text-coretax-red hover:underline">Daftar disini</a>
+                    Pengguna Baru? <a href="#" className="text-porttax-red hover:underline">Daftar disini</a>
                   </p>
                   <p className="text-sm">
-                    <a href="#" className="text-coretax-red hover:underline">Aktivasi Akun Wajib Pajak</a>
+                    <a href="#" className="text-porttax-red hover:underline">Aktivasi Akun Wajib Pajak</a>
                   </p>
                 </div>
               </div>
@@ -153,15 +153,15 @@ const Login = () => {
         </div>
       </div>
       
-      <div className="hidden md:block w-full md:w-2/5 bg-coretax-blue p-8 flex flex-col justify-center animate-fade-in">
+      <div className="hidden md:block w-full md:w-2/5 bg-porttax-blue p-8 flex flex-col justify-center animate-fade-in">
         <div className="h-full flex flex-col justify-center">
-          <h2 className="text-5xl font-bold text-white mb-2">Core</h2>
+          <h2 className="text-5xl font-bold text-white mb-2">Port</h2>
           <h2 className="text-5xl font-bold text-white mb-2">Tax</h2>
           <h2 className="text-5xl font-bold text-white mb-6">Administration</h2>
-          <h2 className="text-5xl font-bold text-white mb-2">System <span className="inline-block w-32 h-2 bg-coretax-yellow"></span></h2>
+          <h2 className="text-5xl font-bold text-white mb-2">System <span className="inline-block w-32 h-2 bg-porttax-yellow"></span></h2>
           
           <div className="absolute bottom-4 right-4 text-white text-xs">
-            Copyright © 2024 Direktorat Jenderal Pajak
+            Copyright © Tax Hits
           </div>
         </div>
       </div>
