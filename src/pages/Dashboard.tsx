@@ -89,7 +89,7 @@ const Dashboard = () => {
         <div className="flex-1 p-4">
           <div className="flex justify-between items-center mb-4">
             <h1 className="text-2xl font-semibold text-porttax-blue">Ikhtisar Profil Wajib Pajak</h1>
-            <Button className="bg-porttax-blue hover:bg-blue-800">
+            <Button className="bg-porttax-blue hover:bg-porttax-yellow">
               <FileText className="mr-2" size={16} />
               Unduh Ikhtisar Profil
             </Button>
@@ -146,7 +146,7 @@ const Dashboard = () => {
 const NavItem = ({ href, children, active = false }) => (
   <a 
     href={href} 
-    className={`px-3 py-2 text-sm hover:bg-blue-700 rounded transition-colors ${
+    className={`px-3 py-2 text-sm hover:bg-porttax-yellow hover:text-black rounded transition-colors ${
       active ? 'bg-blue-700' : ''
     }`}
   >
@@ -155,7 +155,7 @@ const NavItem = ({ href, children, active = false }) => (
 );
 
 const SidebarItem = ({ icon, label, active = false }) => (
-  <div className={`flex items-center gap-2 px-3 py-2 text-sm rounded hover:bg-gray-100 cursor-pointer ${
+  <div className={`flex items-center gap-2 px-3 py-2 text-sm rounded hover:bg-porttax-yellow hover:text-black cursor-pointer ${
     active ? 'bg-gray-100 font-medium' : ''
   }`}>
     {icon}
@@ -167,7 +167,7 @@ const TabItem = ({ label, active = false }) => (
   <div className={`px-4 py-2 cursor-pointer border-b-2 text-sm ${
     active 
       ? 'border-porttax-blue text-porttax-blue font-medium' 
-      : 'border-transparent text-gray-600 hover:text-porttax-blue'
+      : 'border-transparent text-gray-600 hover:text-porttax-blue hover:border-porttax-yellow'
   }`}>
     {label}
   </div>
