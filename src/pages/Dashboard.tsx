@@ -1,9 +1,9 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import PortTaxLogo from '@/components/PortTaxLogo';
-import { Calendar, Database, FileText, FolderOpen, Info, Layout, LayoutDashboard, List, ListCheck, User, UserRound, Users } from 'lucide-react';
+import { Calendar, ChevronDown, Database, FileText, FolderOpen, Info, Layout, LayoutDashboard, List, ListCheck, User, UserRound, Users } from 'lucide-react';
 
 const Dashboard = () => {
   const currentDate = new Date();
@@ -12,6 +12,16 @@ const Dashboard = () => {
     month: 'long',
     year: 'numeric'
   });
+
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (menu: string) => {
+    if (openDropdown === menu) {
+      setOpenDropdown(null);
+    } else {
+      setOpenDropdown(menu);
+    }
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -42,7 +52,37 @@ const Dashboard = () => {
           <nav className="flex space-x-1">
             <NavItem href="#" active>Portal Saya</NavItem>
             <NavItem href="#">e-Faktur</NavItem>
-            <NavItem href="#">eBupot</NavItem>
+            
+            {/* eBupot Dropdown Menu */}
+            <div className="relative">
+              <button 
+                onClick={() => toggleDropdown('ebupot')} 
+                className={`px-3 py-2 text-sm hover:bg-porttax-yellow hover:text-black rounded transition-colors flex items-center ${
+                  openDropdown === 'ebupot' ? 'bg-porttax-yellow text-black' : ''
+                }`}
+              >
+                eBupot
+                <ChevronDown size={16} className="ml-1" />
+              </button>
+              
+              {openDropdown === 'ebupot' && (
+                <div className="absolute left-0 top-full mt-1 w-max bg-white text-porttax-blue rounded-md shadow-lg z-20">
+                  <div className="py-1">
+                    <DropdownItem>BPPU</DropdownItem>
+                    <DropdownItem>BPNR</DropdownItem>
+                    <DropdownItem>Penyetoran Sendiri</DropdownItem>
+                    <DropdownItem>Pemotongan Secara Digugungkan</DropdownItem>
+                    <DropdownItem>BP 21 - Bukti Pemotongan Selain Pegawai Tetap</DropdownItem>
+                    <DropdownItem>BP 26 - Bukti Pemotongan Wajib Pajak Luar Negeri</DropdownItem>
+                    <DropdownItem>BP A1 - Bukti Pemotongan A1 Masa Pajak Terakhir</DropdownItem>
+                    <DropdownItem>BP A2 - Bukti Pemotongan A2 Masa Pajak Terakhir</DropdownItem>
+                    <DropdownItem>Bukti Pemotongan Bulanan Pegawai Tetap</DropdownItem>
+                    <DropdownItem>Unggah Dokumen yang Dipersamakan dengan Bukti Pemotongan/Pemungutan</DropdownItem>
+                  </div>
+                </div>
+              )}
+            </div>
+            
             <NavItem href="#">Surat Pemberitahuan (SPT)</NavItem>
             <NavItem href="#">Bantuan</NavItem>
             <NavItem href="#">Pembayaran</NavItem>
@@ -149,6 +189,15 @@ const NavItem = ({ href, children, active = false }) => (
     className={`px-3 py-2 text-sm hover:bg-porttax-yellow hover:text-black rounded transition-colors ${
       active ? 'bg-blue-700' : ''
     }`}
+  >
+    {children}
+  </a>
+);
+
+const DropdownItem = ({ children }) => (
+  <a 
+    href="#" 
+    className="block px-4 py-2 text-sm hover:bg-porttax-blue hover:text-white border-b border-gray-100 last:border-0"
   >
     {children}
   </a>
